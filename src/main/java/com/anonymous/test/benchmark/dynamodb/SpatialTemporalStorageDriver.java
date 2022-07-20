@@ -21,7 +21,7 @@ import java.util.Map;
  **/
 public class SpatialTemporalStorageDriver {
 
-    private static DynamoDbClient client = DynamoDBDriver.createClientForLocal();
+    private static DynamoDbClient client = DynamoDBDriver.createClientForWeb(Region.US_EAST_1);
 
     private static String tableName = "spatialTemporalTable";
 

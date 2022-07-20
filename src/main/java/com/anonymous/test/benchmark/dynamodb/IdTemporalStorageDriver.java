@@ -18,7 +18,7 @@ import java.util.*;
  **/
 public class IdTemporalStorageDriver {
 
-    private static DynamoDbClient client = DynamoDBDriver.createClientForLocal();
+    private static DynamoDbClient client = DynamoDBDriver.createClientForWeb(Region.US_EAST_1);
 
 /*    private static DynamoDbEnhancedClient enhancedClient = DynamoDbEnhancedClient.builder()
             .dynamoDbClient(client)
